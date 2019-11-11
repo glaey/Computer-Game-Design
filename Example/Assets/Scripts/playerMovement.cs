@@ -14,6 +14,7 @@ public class playerMovement : MonoBehaviour
     Quaternion m_Rotation = Quaternion.identity;
     bool canJump = true;
     Vector3 driftMovement;
+    public GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -92,6 +93,9 @@ public class playerMovement : MonoBehaviour
         }
         if(collision.gameObject.tag == "Pickup")
         {
+            if (collision.gameObject.GetComponent<item>().type == "Purple Mushroom"){
+                inventory.GetComponent<inventory>().pickUpPurple();
+            }
             Destroy(collision.gameObject);
         }
     }
