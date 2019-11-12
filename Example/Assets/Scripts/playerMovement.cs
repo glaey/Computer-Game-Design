@@ -14,6 +14,7 @@ public class playerMovement : MonoBehaviour
     Quaternion m_Rotation = Quaternion.identity;
     bool canJump = true;
     Vector3 driftMovement;
+    public GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +40,7 @@ public class playerMovement : MonoBehaviour
 
         if (canJump == true)
         {
-            if(Input.GetAxis("Jump") > 0)
+            if(Input.GetAxis("Jump") != 0)
             {
                 m_Animator.SetBool("IsJumping", true);
                 m_RigidBody.velocity = new Vector3(m_RigidBody.velocity.x, jumpVelocity, m_RigidBody.velocity.z);
@@ -67,7 +68,6 @@ public class playerMovement : MonoBehaviour
             }*/
             driftMovement.Normalize();
         }
-
     }
 
     void OnAnimatorMove()
@@ -75,11 +75,9 @@ public class playerMovement : MonoBehaviour
         if (canJump)
         {
             m_RigidBody.MovePosition(m_RigidBody.position + m_Movement * movement * Time.deltaTime);
-            print(m_Movement * movement);
         } else
         {
             m_RigidBody.MovePosition(m_RigidBody.position + driftMovement * movement * Time.deltaTime);
-            print(driftMovement * movement);
         }
         m_RigidBody.MoveRotation(m_Rotation);
     }
@@ -91,6 +89,14 @@ public class playerMovement : MonoBehaviour
         {
             //If the GameObject's name matches the one you suggest, output this message in the console
             canJump = true;
+            m_Movement.Set(0f, 0f, 0f);
+        }
+        if(collision.gameObject.tag == "Pickup")
+        {
+            if (collision.gameObject.GetComponent<item>().type == "Purple Mushroom"){
+                inventory.GetComponent<inventory>().pickUpPurple();
+            }
+            Destroy(collision.gameObject);
         }
     }
 }
