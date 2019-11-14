@@ -1978,7 +1978,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 518893876}
-  - component: {fileID: 518893877}
   - component: {fileID: 518893880}
   - component: {fileID: 518893879}
   - component: {fileID: 518893878}
@@ -1997,33 +1996,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518893875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.24, y: 8.97, z: 10.31}
+  m_LocalPosition: {x: -7.24, y: 8, z: 10.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &518893877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518893875}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f769344a18165840a13d2288152bea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 5
-  RotationSpeed: 240
-  Inventory: {fileID: 0}
-  Hand: {fileID: 0}
-  Hud: {fileID: 0}
-  JumpSpeed: 7
-  Health: 100
-  Food: 100
-  HungerRate: 0.5
 --- !u!114 &518893878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2063,7 +2041,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518893875}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02b9452b3157a344d9e19e7f2f61f59c, type: 3}
   m_Name: 
@@ -3771,7 +3749,7 @@ GameObject:
   - component: {fileID: 908235613}
   - component: {fileID: 908235615}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3817,7 +3795,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908235612}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1f447b8ca37a7514daa1c5e4ab7196a1, type: 2}
   m_CullingMode: 0
@@ -6247,11 +6225,11 @@ Transform:
   - {fileID: 353672468}
   - {fileID: 715765417}
   - {fileID: 181108837}
-  - {fileID: 939433275}
+  - {fileID: 518196313}
   - {fileID: 978983078}
   - {fileID: 1431867014}
-  - {fileID: 518196313}
   - {fileID: 78852108}
+  - {fileID: 939433275}
   m_Father: {fileID: 1777453884}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

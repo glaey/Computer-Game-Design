@@ -559,8 +559,8 @@ GameObject:
   - component: {fileID: 4081584095433592}
   - component: {fileID: 95729466773059844}
   - component: {fileID: 143857133471581462}
-  - component: {fileID: 65069898044060218}
   - component: {fileID: 114776834927309406}
+  - component: {fileID: -4942102364912664518}
   m_Layer: 0
   m_Name: lp_guy
   m_TagString: Player
@@ -621,19 +621,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.17, z: 0}
---- !u!65 &65069898044060218
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438851699991618}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.67, z: 0}
 --- !u!114 &114776834927309406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,7 +628,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438851699991618}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f769344a18165840a13d2288152bea6, type: 3}
   m_Name: 
@@ -655,6 +642,20 @@ MonoBehaviour:
   Health: 100
   Food: 100
   HungerRate: 0.5
+--- !u!114 &-4942102364912664518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438851699991618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c98dd2c649e24d74ae42c4998b9068c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rotationSpeed: 240
 --- !u!1 &1497685537408412
 GameObject:
   m_ObjectHideFlags: 0

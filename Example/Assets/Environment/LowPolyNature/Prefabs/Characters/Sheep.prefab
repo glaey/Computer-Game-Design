@@ -488,12 +488,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4405990468133924}
   - component: {fileID: 95144379055148904}
-  - component: {fileID: 136834963823365008}
   - component: {fileID: 114743782183814366}
   - component: {fileID: 195094338865217482}
   - component: {fileID: 54272747306353502}
   - component: {fileID: 7092339446903497735}
   - component: {fileID: 8771215256941775078}
+  - component: {fileID: -4095546170980281414}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
@@ -508,8 +508,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442330619866686}
-  m_LocalRotation: {x: 0, y: -0.37460646, z: 0, w: 0.9271839}
-  m_LocalPosition: {x: 8.7, y: 1.2, z: 0.7}
+  m_LocalRotation: {x: -0.003767502, y: -0.37458825, z: -0.009324588, w: 0.9271368}
+  m_LocalPosition: {x: 8.689083, y: 10, z: 0.8}
   m_LocalScale: {x: 1.4681542, y: 1.4681543, z: 1.4681543}
   m_Children:
   - {fileID: 4938041482547880}
@@ -518,7 +518,7 @@ Transform:
   - {fileID: 4008439495370324}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -44, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.80100006, y: -43.994003, z: -0.82900006}
 --- !u!95 &95144379055148904
 Animator:
   serializedVersion: 3
@@ -538,20 +538,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &136834963823365008
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442330619866686}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.41
-  m_Height: 1.02
-  m_Direction: 2
-  m_Center: {x: 0, y: 0.37, z: 0.066682756}
 --- !u!114 &114743782183814366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,9 +590,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &7092339446903497735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,7 +600,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442330619866686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f769344a18165840a13d2288152bea6, type: 3}
   m_Name: 
@@ -639,13 +625,27 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0
-  m_Radius: 0.53
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_Height: 0.16
+  m_Radius: 0.24
+  m_SlopeLimit: 44.8
+  m_StepOffset: 0.4
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.6, z: 0}
+  m_Center: {x: 0, y: 0.42, z: 0}
+--- !u!114 &-4095546170980281414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442330619866686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c98dd2c649e24d74ae42c4998b9068c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rotationSpeed: 240
 --- !u!1 &1453347745630436
 GameObject:
   m_ObjectHideFlags: 0
