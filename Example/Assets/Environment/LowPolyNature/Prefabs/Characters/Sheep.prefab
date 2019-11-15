@@ -490,13 +490,12 @@ GameObject:
   - component: {fileID: 95144379055148904}
   - component: {fileID: 114743782183814366}
   - component: {fileID: 195094338865217482}
-  - component: {fileID: 54272747306353502}
   - component: {fileID: 7092339446903497735}
   - component: {fileID: 8771215256941775078}
   - component: {fileID: -4095546170980281414}
   m_Layer: 0
   m_Name: Sheep
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -509,7 +508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442330619866686}
   m_LocalRotation: {x: -0.003767502, y: -0.37458825, z: -0.009324588, w: 0.9271368}
-  m_LocalPosition: {x: 8.689083, y: 10, z: 0.8}
+  m_LocalPosition: {x: 8.689083, y: 10.06, z: 0.8}
   m_LocalScale: {x: 1.4681542, y: 1.4681543, z: 1.4681543}
   m_Children:
   - {fileID: 4938041482547880}
@@ -532,7 +531,7 @@ Animator:
   m_Controller: {fileID: 22100000, guid: 3ff760aa5851349db906a8c3ac95ac1d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -577,22 +576,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!54 &54272747306353502
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442330619866686}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 1
 --- !u!114 &7092339446903497735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +592,7 @@ MonoBehaviour:
   RotationSpeed: 240
   Inventory: {fileID: 0}
   Hand: {fileID: 0}
+  inventory: {fileID: 0}
   Hud: {fileID: 0}
   JumpSpeed: 7
   Health: 100
@@ -625,13 +609,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.16
-  m_Radius: 0.24
+  m_Height: 0.31
+  m_Radius: 0.44
   m_SlopeLimit: 44.8
   m_StepOffset: 0.4
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.42, z: 0}
+  m_Center: {x: 0, y: 0.41, z: 0}
 --- !u!114 &-4095546170980281414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 240
+  JumpSpeed: 5
+  inventory: {fileID: 0}
 --- !u!1 &1453347745630436
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     public Inventory Inventory;
 
     public GameObject Hand;
+        public GameObject inventory;
+
 
     public HUD Hud;
 
@@ -353,19 +355,37 @@ public class PlayerController : MonoBehaviour
 
     private InteractableItemBase mInteractItem = null;
 
-    private void OnTriggerEnter(Collider other)
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     InteractableItemBase item = other.GetComponent<InteractableItemBase>();
+
+    //     if (item != null)
+    //     {
+    //         if (item.CanInteract(other))
+    //         {
+
+    //             mInteractItem = item;
+
+    //             Hud.OpenMessagePanel(mInteractItem);
+    //         }
+    //     }
+    // }
+
+    void OnCollisionEnter(Collision collision)
     {
-        InteractableItemBase item = other.GetComponent<InteractableItemBase>();
-
-        if (item != null)
+        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        // if (collision.gameObject.tag == "Ground")
+        // {
+        //     //If the GameObject's name matches the one you suggest, output this message in the console
+        //     canJump = true;
+        //     m_Movement.Set(0f, 0f, 0f);
+        // }
+        if(collision.gameObject.tag == "Pickup")
         {
-            if (item.CanInteract(other))
-            {
-
-                mInteractItem = item;
-
-                Hud.OpenMessagePanel(mInteractItem);
+            if (collision.gameObject.GetComponent<item>().type == "Purple Mushroom"){
+                inventory.GetComponent<inventory>().pickUpPurple();
             }
+            Destroy(collision.gameObject);
         }
     }
 

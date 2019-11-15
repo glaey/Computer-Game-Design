@@ -7,16 +7,21 @@ public class move : MonoBehaviour
   // Start is called before the first frame update
   private Animator _animator;
   private CharacterController _characterController;
-  private float gravity = 2.0f;
+  private float gravity = 20.0f;
+  private bool isHit = false;
 
   private Vector3 _moveDirection = Vector3.zero;
 
   public float speed = 5.0f;
   public float rotationSpeed = 240.0f;
+  public float JumpSpeed = 5.0f;
+
+  public GameObject inventory;
   void Start()
   {
     _animator = GetComponent<Animator>();
     _characterController = GetComponent<CharacterController>();
+    inventory = GameObject.Find("Inventory");
 
   }
 
@@ -40,32 +45,63 @@ public class move : MonoBehaviour
 
     transform.Rotate(0, turnAmount * rotationSpeed * Time.deltaTime, 0);
 
-    // if (_characterController.isGrounded)
-    // {
-    _moveDirection = transform.forward * move.magnitude;
-
-    _moveDirection *= speed;
-    if (Input.GetButton("Jump"))
+    if (_characterController.isGrounded)
     {
-      _animator.SetBool("is_in_air", true);
-    //   _moveDirection.y = JumpSpeed;
+      _moveDirection = transform.forward * move.magnitude;
 
+      _moveDirection *= speed;
+      if (Input.GetButton("Jump"))
+      {
+        _animator.SetBool("is_in_air", true);
+        _moveDirection.y = JumpSpeed;
+
+      }
+      else
+      {
+        _animator.SetBool("is_in_air", false);
+        _animator.SetBool("run", move.magnitude > 0);
+
+
+        // Debug.Log(_animator.GetBool("run"));
+
+      }
     }
-    else
-    {
-      _animator.SetBool("is_in_air", false);
-      _animator.SetBool("run", move.magnitude > 0);
-    }
-    // }
+
 
     _moveDirection.y -= gravity * Time.deltaTime;
-    _moveDirection.y = 0;
 
     _characterController.Move(_moveDirection * Time.deltaTime);
 
 
 
   }
+
+  // void OnControllerColliderHit(ControllerColliderHit hit)
+  // {
+
+  //   //Check for a match with the specified name on any GameObject that collides with your GameObject
+  //   // if (collision.gameObject.tag == "Ground")
+  //   // {
+  //   //     //If the GameObject's name matches the one you suggest, output this message in the console
+  //   //     canJump = true;
+  //   //     m_Movement.Set(0f, 0f, 0f);
+  //   // }
+    
+  //   if (hit.collider.gameObject.tag == "Pickup" )
+  //   {
+  //     isHit = true;
+  //     if (hit.collider.gameObject.GetComponent<item>().type == "Purple Mushroom")
+  //     {
+  //       inventory.GetComponent<inventory>().pickUpPurple();
+  //     }
+  //     Debug.Log("Collided");
+  //     print("Collision Out: " + hit.collider.gameObject.name);
+
+  //     Destroy(hit.collider.gameObject);
+
+      
+  //   }
+  // }
 }
 
 

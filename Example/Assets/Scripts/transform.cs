@@ -19,7 +19,7 @@ public class transform : MonoBehaviour
   void Start()
   {
     model = Instantiate(p1);
-    gameObject.GetComponent<Animator>().avatar = p1_avatar;
+    // gameObject.GetComponent<Animator>().avatar = p1_avatar;
 
     // player.GetComponent<Animator>().avatar = p2_avatar;
     model.transform.SetParent(player.transform);
@@ -38,7 +38,7 @@ public class transform : MonoBehaviour
       {
         Destroy(model);
         model = Instantiate(p2);
-        gameObject.GetComponent<Animator>().avatar = p2_avatar;
+        // gameObject.GetComponent<Animator>().avatar = p2_avatar;
         model.transform.SetParent(player.transform);
         model.transform.localPosition = new Vector3(0, 0, 0);
       }
@@ -46,17 +46,12 @@ public class transform : MonoBehaviour
       {
         Destroy(model);
         model = Instantiate(p1);
-        gameObject.GetComponent<Animator>().avatar = p1_avatar;
-              model.transform.SetParent(player.transform);
-      model.transform.localPosition = new Vector3(0, 0, 0);
+        // gameObject.GetComponent<Animator>().avatar = p1_avatar;
+        model.transform.SetParent(player.transform);
+        model.transform.localPosition = new Vector3(0, 0, 0);
 
       }
-
-
-
-      gameObject.GetComponent<Animator>().Rebind();
-
-
+      // GetComponent<Animator>().Rebind();
     }
 
   }

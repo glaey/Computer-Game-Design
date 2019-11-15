@@ -23,4 +23,5 @@ public class inventory : MonoBehaviour
         purpleMush++;
         gameObject.transform.Find("PurpleMushroom").Find("Amount").GetComponent<Text>().text = purpleMush.ToString();
     }
+    
 }

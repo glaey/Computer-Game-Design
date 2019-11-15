@@ -561,6 +561,7 @@ GameObject:
   - component: {fileID: 143857133471581462}
   - component: {fileID: 114776834927309406}
   - component: {fileID: -4942102364912664518}
+  - component: {fileID: 7596895909539893182}
   m_Layer: 0
   m_Name: lp_guy
   m_TagString: Player
@@ -576,7 +577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438851699991618}
   m_LocalRotation: {x: 0, y: 0.34240553, z: 0, w: 0.93955225}
-  m_LocalPosition: {x: 3.569, y: 0.031, z: 0.8312763}
+  m_LocalPosition: {x: 3.569, y: 11.47, z: 0.8312763}
   m_LocalScale: {x: 0.83521295, y: 0.83521295, z: 0.83521295}
   m_Children:
   - {fileID: 4133367640610458}
@@ -614,13 +615,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 2.36
   m_Radius: 0.41
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.17, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &114776834927309406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,6 +638,8 @@ MonoBehaviour:
   RotationSpeed: 280
   Inventory: {fileID: 0}
   Hand: {fileID: 1364607010040684}
+  inventory: {fileID: 5392640464735388019, guid: 90fe917e3576c422c8db13287f735ded,
+    type: 3}
   Hud: {fileID: 0}
   JumpSpeed: 7
   Health: 100
@@ -656,6 +659,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 240
+  JumpSpeed: 5
+  inventory: {fileID: 1674528140064880, guid: 3b115c80330774542bbcc88497e7c821, type: 3}
+--- !u!114 &7596895909539893182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438851699991618}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7d39a4c7a9179429f7013e92807734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 5
+  aerialMovement: 1
+  turnSpeed: 20
+  jumpVelocity: 5
+  inventory: {fileID: 0}
 --- !u!1 &1497685537408412
 GameObject:
   m_ObjectHideFlags: 0
