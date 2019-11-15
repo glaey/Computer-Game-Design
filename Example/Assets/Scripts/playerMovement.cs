@@ -96,6 +96,10 @@ public class playerMovement : MonoBehaviour
             if (collision.gameObject.GetComponent<item>().type == "Purple Mushroom"){
                 inventory.GetComponent<inventory>().pickUpPurple();
             }
+            if (collision.gameObject.GetComponent<item>().type == "Yellow Mushroom")
+            {
+                inventory.GetComponent<inventory>().pickUpYellow();
+            }
             Destroy(collision.gameObject);
         }
     }

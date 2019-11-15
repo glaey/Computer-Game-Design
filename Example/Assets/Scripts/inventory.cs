@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class inventory : MonoBehaviour
 {
     int purpleMush = 0;
+    int yellowMush = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,10 @@ public class inventory : MonoBehaviour
     {
         purpleMush++;
         gameObject.transform.Find("PurpleMushroom").Find("Amount").GetComponent<Text>().text = purpleMush.ToString();
+    }
+    public void pickUpYellow()
+    {
+        yellowMush++;
+        gameObject.transform.Find("YellowMushroom").Find("Amount").GetComponent<Text>().text = yellowMush.ToString();
     }
 }
