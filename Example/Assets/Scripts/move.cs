@@ -76,32 +76,30 @@ public class move : MonoBehaviour
 
   }
 
-  // void OnControllerColliderHit(ControllerColliderHit hit)
-  // {
+    //void OnControllerColliderHit(ControllerColliderHit hit)
+    //{
+    //    //check for a match with the specified name on any gameobject that collides with your gameobject
+    //    // if (collision.gameobject.tag == "ground")
+    //    // {
+    //    //     //if the gameobject's name matches the one you suggest, output this message in the console
+    //    //     canjump = true;
+    //    //     m_movement.set(0f, 0f, 0f);
+    //    // }
 
-  //   //Check for a match with the specified name on any GameObject that collides with your GameObject
-  //   // if (collision.gameObject.tag == "Ground")
-  //   // {
-  //   //     //If the GameObject's name matches the one you suggest, output this message in the console
-  //   //     canJump = true;
-  //   //     m_Movement.Set(0f, 0f, 0f);
-  //   // }
-    
-  //   if (hit.collider.gameObject.tag == "Pickup" )
-  //   {
-  //     isHit = true;
-  //     if (hit.collider.gameObject.GetComponent<item>().type == "Purple Mushroom")
-  //     {
-  //       inventory.GetComponent<inventory>().pickUpPurple();
-  //     }
-  //     Debug.Log("Collided");
-  //     print("Collision Out: " + hit.collider.gameObject.name);
+    //    if (hit.collider.gameObject.tag == "Pickup")
+    //    {
+    //        isHit = true;
+    //        if (hit.collider.gameObject.GetComponent<item>().type == "Purple Mushroom")
+    //        {
+    //            inventory.GetComponent<inventory>().pickUpPurple();
+    //        }
+    //        print("collision out: " + hit.collider.gameObject.name);
 
-  //     Destroy(hit.collider.gameObject);
+    //        Destroy(hit.collider.gameObject);
 
-      
-  //   }
-  // }
+
+    //    }
+    //}
 }
 
 

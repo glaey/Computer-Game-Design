@@ -15,6 +15,7 @@ public class new_transform : MonoBehaviour
   void Start()
   {
     lp = GameObject.Find("lp_guy");
+    lp.SetActive(false);
     lp.SetActive(true);
     
     sheep = GameObject.Find("Sheep");
