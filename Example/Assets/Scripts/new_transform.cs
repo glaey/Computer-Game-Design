@@ -36,6 +36,7 @@ public class new_transform : MonoBehaviour
       if (flag % 2 == 1)
       {
         sheep.transform.position = lp.transform.position;
+        sheep.transform.rotation = lp.transform.rotation;
         lp.SetActive(false);
         sheep.SetActive(true);
         print("transform to sheep");
@@ -48,6 +49,7 @@ public class new_transform : MonoBehaviour
       {
 
         lp.transform.position = sheep.transform.position;
+        lp.transform.rotation = sheep.transform.rotation;
         lp.SetActive(true);
         sheep.SetActive(false);
 
