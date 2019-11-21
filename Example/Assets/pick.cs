@@ -20,7 +20,6 @@ public class pick : MonoBehaviour
   void OnTriggerEnter(Collider other)
   {
     print("Trigger");
-
     if (other.gameObject.tag == "Player")
     {
       if (GetComponent<item>().type == "Purple Mushroom")
