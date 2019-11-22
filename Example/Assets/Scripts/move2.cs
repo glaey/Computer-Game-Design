@@ -99,7 +99,7 @@ public class move2 : MonoBehaviour
     if (Input.GetKeyDown(KeyCode.C) && !activeCD)
     {
       isCharging = true;
-            _moveDirection = transform.forward *= speed;
+      _moveDirection = transform.forward *= speed;
     }
 
   }
