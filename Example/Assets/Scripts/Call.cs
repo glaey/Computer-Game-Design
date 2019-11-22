@@ -15,7 +15,7 @@ public class Call : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.G))
+        if (Input.GetKey(KeyCode.G) || Input.GetKey(KeyCode.JoystickButton5))
         {
             gameObject.transform.position = gameObject.transform.position + ((target.gameObject.transform.position - gameObject.transform.position).normalized * speed * Time.deltaTime);
         }

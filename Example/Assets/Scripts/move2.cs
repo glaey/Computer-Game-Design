@@ -96,7 +96,7 @@ public class move2 : MonoBehaviour
 
     _characterController.Move(_moveDirection * Time.deltaTime);
 
-    if (Input.GetKeyDown(KeyCode.C) && !activeCD)
+    if ((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !activeCD)
     {
       isCharging = true;
       _moveDirection = transform.forward *= speed;

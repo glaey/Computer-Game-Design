@@ -7,7 +7,7 @@ public class Pushable : MonoBehaviour
     Rigidbody rigidbody;
     private bool recentlyMoved;
     public float timeSum;
-    public float buffer = 0.3f;
+    public float buffer = 0.7f;
     
     
     // Start is called before the first frame update
@@ -32,12 +32,23 @@ public class Pushable : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.R) && !recentlyMoved)
+        if (other.gameObject.tag == "Player" && (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.Joystick1Button2) )&& !recentlyMoved)
         {
             Vector2 dif = new Vector2(other.gameObject.transform.position.x - gameObject.transform.position.x, other.gameObject.transform.position.z - gameObject.transform.position.z);
             float angle = Vector2.SignedAngle(new Vector2(1f,0f), dif);
+            rigidbody.velocity = new Vector3(0f, 0f, 0f);
             rigidbody.AddForce(Mathf.Cos(angle * Mathf.PI / 180) * -3000000f, 0f, Mathf.Sin(angle * Mathf.PI / 180)*-3000000f);
             recentlyMoved = true;
         }
+    }
+
+    void OnCollisionExit()
+    {
+        rigidbody.velocity = new Vector3(0f, -10f, 0f);
+    }
+
+    void OnCollisionEnter()
+    {
+        rigidbody.velocity = new Vector3(0f, 0f, 0f);
     }
 }
