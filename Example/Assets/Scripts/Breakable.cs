@@ -18,7 +18,7 @@ public class Breakable : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<move2>().isCharging)
+        if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<move2>().isCharging)
         {
             other.gameObject.GetComponent<move2>().EndCharge(0.5f);
             Destroy(gameObject);
@@ -27,7 +27,7 @@ public class Breakable : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<move2>().isCharging)
+        if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<move2>().isCharging)
         {
             other.gameObject.GetComponent<move2>().EndCharge(0.5f);
             Destroy(gameObject);

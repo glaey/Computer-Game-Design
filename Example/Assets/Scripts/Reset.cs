@@ -19,7 +19,7 @@ public class Reset : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.gameObject.tag == "Baby"  || collider.gameObject.tag == "Player")
+        if(collider.gameObject.tag == "Baby"  || collider.gameObject.tag == "Bear" || collider.gameObject.tag == "Stag" || collider.gameObject.tag == "Human")
         {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
