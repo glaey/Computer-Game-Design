@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escort.unity
     guid: e527cbe284db1e447b35d7b193c3aec6
+  - enabled: 1
+    path: Assets/Scenes/ExampleLevel1.unity
+    guid: 7c1f508481795fa408e0bd03e1829ae0
   m_configObjects: {}

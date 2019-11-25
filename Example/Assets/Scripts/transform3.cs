@@ -16,15 +16,20 @@ public class transform3 : MonoBehaviour
 // Start is called before the first frame update
     void Start()
     {
-        lp = GameObject.Find("lp_guy");
+        
+    }
+
+    void Awake()
+    {
+        lp = transform.GetChild(0).gameObject;
         lp.SetActive(false);
         lp.SetActive(true);
-    
-        bear = GameObject.Find("BEAR");
-        bear.SetActive(false);
 
-        stag = GameObject.Find("STAG");
+        stag = transform.GetChild(1).gameObject;
         stag.SetActive(false);
+
+        bear = transform.GetChild(2).gameObject;
+        bear.SetActive(false);
     }
 
 // Update is called once per frame
