@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
+    public SceneMngr scnMngr;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    void Awake()
+    {
+        scnMngr = GameObject.Find("SceneMngr").gameObject.GetComponent<SceneMngr>();
     }
 
     // Update is called once per frame
@@ -21,8 +27,7 @@ public class Reset : MonoBehaviour
     {
         if(collider.gameObject.tag == "Baby"  || collider.gameObject.tag == "Bear" || collider.gameObject.tag == "Stag" || collider.gameObject.tag == "Human")
         {
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            scnMngr.Restart();
         }
     }
 }
