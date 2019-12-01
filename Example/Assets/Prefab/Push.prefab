@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeSum: 0
-  buffer: 0.3
+  buffer: 1
 --- !u!65 &5550636468021842283
 BoxCollider:
   m_ObjectHideFlags: 0

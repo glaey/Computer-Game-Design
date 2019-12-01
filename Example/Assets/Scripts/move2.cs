@@ -7,50 +7,32 @@ public class move2 : MonoBehaviour
 {
   // Start is called before the first frame update
   private Animator _animator;
-  private CharacterController _characterController;
+  public CharacterController _characterController;
   private float gravity = 20.0f;
   private bool isHit = false;
 
-  private Vector3 _moveDirection = Vector3.zero;
+  public Vector3 _moveDirection = Vector3.zero;
 
+ 
   public float speed = 5.0f;
   public float rotationSpeed = 240.0f;
   public float JumpSpeed = 5.0f;
+  
   public bool isCharging = false;
-  private float chargeProgress = 0;
-  public float chargeDuration;
-  public float chargeSpeed = 2.0f;
-  public bool linerCharge = false;
-  public float linearSpeed = 2.0f;
-  public float chargeCD;
-  public bool activeCD;
-  private float timeSum = 0f;
 
-  private CameraShake cameraShake;
   public GameObject inventory;
   void Start()
   {
     _animator = GetComponent<Animator>();
     _characterController = GetComponent<CharacterController>();
     inventory = GameObject.Find("Inventory");
-    cameraShake = GameObject.Find("Main Camera").GetComponent<CameraShake>();
    }
 
   // Update is called once per frame
   void Update()
   {
-    if (activeCD)
-    {
-      timeSum += Time.deltaTime;
-      if(timeSum > chargeCD)
-        {
-          activeCD = false;
-          timeSum = 0f;
-        }
-    }
     if (isCharging)
     {
-        Charge();
         return;
     }
     float h = Input.GetAxis("Horizontal");
@@ -96,43 +78,9 @@ public class move2 : MonoBehaviour
 
     _characterController.Move(_moveDirection * Time.deltaTime);
 
-    if ((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !activeCD)
-    {
-      isCharging = true;
-      _moveDirection = transform.forward *= speed;
-    }
 
   }
 
-    private void Charge()
-    {
-        if (linerCharge)
-        {
-            _characterController.Move(_moveDirection * Time.deltaTime * linearSpeed);
-            chargeProgress += linearSpeed * Time.deltaTime;
-            if (chargeProgress > chargeDuration)
-            {
-                EndCharge(0f);
-            }
-        }
-        else
-        {
-            _characterController.Move(_moveDirection * Time.deltaTime * Mathf.Pow(chargeProgress, 2));
-            chargeProgress += chargeSpeed * Time.deltaTime;
-            if (chargeProgress > chargeDuration)
-            {
-                EndCharge(0f);
-            }
-        }
-    }
-
-    public void EndCharge(float shakeDur)
-    {
-        isCharging = false;
-        chargeProgress = 0f;
-        cameraShake.startShaking(shakeDur);
-        activeCD = true;
-    }
 
     //void OnControllerColliderHit(ControllerColliderHit hit)
     //{

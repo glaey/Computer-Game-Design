@@ -32,7 +32,7 @@ public class Pushable : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Bear" && (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.Joystick1Button2) )&& !recentlyMoved)
+        if (other.gameObject.tag == "Bear" && (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.Joystick1Button1) )&& !recentlyMoved)
         {
             Vector2 dif = new Vector2(other.gameObject.transform.position.x - gameObject.transform.position.x, other.gameObject.transform.position.z - gameObject.transform.position.z);
             float angle = Vector2.SignedAngle(new Vector2(1f,0f), dif);
