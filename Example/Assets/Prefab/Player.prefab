@@ -5528,7 +5528,7 @@ MonoBehaviour:
   chargeSpeed: 2
   linerCharge: 1
   linearSpeed: 5
-  chargeCD: 0
+  chargeCD: 2
   activeCD: 0
 --- !u!114 &8896689481160571848
 MonoBehaviour:

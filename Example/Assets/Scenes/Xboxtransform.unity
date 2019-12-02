@@ -380,6 +380,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550636468021842287, guid: ee35ea9177c50334f94b4887dda9dda7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4607f2fb46a699d42b36ddc0c3eb4057, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee35ea9177c50334f94b4887dda9dda7, type: 3}
 --- !u!4 &339762945 stripped
@@ -1443,20 +1448,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8896689481221171459, guid: 434d443db1043574cbc3578b603f2a19,
+    - target: {fileID: 3445226208663615707, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896689481716823744, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896689481160571848, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2121510714554153202, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
@@ -1468,19 +1463,39 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 2000
       objectReference: {fileID: 0}
-    - target: {fileID: 5042186309185012631, guid: 434d443db1043574cbc3578b603f2a19,
+    - target: {fileID: 8896689481221171459, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
-      propertyPath: linearSpeed
-      value: 5
+      propertyPath: rotationSpeed
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896689481716823744, guid: 434d443db1043574cbc3578b603f2a19,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5559478996339115180, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3445226208663615707, guid: 434d443db1043574cbc3578b603f2a19,
+    - target: {fileID: 8896689481160571848, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: rotationSpeed
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426905985488673433, guid: 434d443db1043574cbc3578b603f2a19,
+        type: 3}
+      propertyPath: m_Time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515305478838710208, guid: 434d443db1043574cbc3578b603f2a19,
+        type: 3}
+      propertyPath: m_Time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300377015711637621, guid: 434d443db1043574cbc3578b603f2a19,
+        type: 3}
+      propertyPath: m_Time
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6004025714697466465, guid: 434d443db1043574cbc3578b603f2a19,
@@ -1498,25 +1513,15 @@ PrefabInstance:
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
       value: 0.0032348633
       objectReference: {fileID: 0}
-    - target: {fileID: 8300377015711637621, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4019373001497949461, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
       propertyPath: m_Time
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4426905985488673433, guid: 434d443db1043574cbc3578b603f2a19,
+    - target: {fileID: 5042186309185012631, guid: 434d443db1043574cbc3578b603f2a19,
         type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515305478838710208, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
+      propertyPath: linearSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5559478996339115180, guid: 434d443db1043574cbc3578b603f2a19, type: 3}
