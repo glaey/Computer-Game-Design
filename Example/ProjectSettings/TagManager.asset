@@ -9,6 +9,7 @@ TagManager:
   - Baby
   - Bear
   - Stag
+  - Critter
   layers:
   - Default
   - TransparentFX

@@ -7,6 +7,7 @@ public class transform3 : MonoBehaviour
     public GameObject lp;
     public GameObject bear;
     public GameObject stag;
+    public GameObject wolf;
 
     private Quaternion lastRotation;
     public int form = 0;
@@ -30,6 +31,9 @@ public class transform3 : MonoBehaviour
 
         bear = transform.GetChild(2).gameObject;
         bear.SetActive(false);
+
+        wolf = transform.GetChild(3).gameObject;
+        wolf.SetActive(false);
     }
 
 // Update is called once per frame
@@ -57,10 +61,14 @@ public class transform3 : MonoBehaviour
             transform.position = stag.transform.position;
             lastRotation = stag.transform.rotation;
         }
-        else
+        else if(form == 2)
         {
             transform.position = bear.transform.position;
             lastRotation = bear.transform.rotation;
+        } else
+        {
+            transform.position = wolf.transform.position;
+            lastRotation = wolf.transform.rotation;
         }
     }
     
@@ -74,7 +82,7 @@ public class transform3 : MonoBehaviour
             lp.SetActive(false);
             bear.SetActive(false);
             stag.SetActive(true);
-            print("transform to sheep");
+            wolf.SetActive(false);
         }
         else if (Input.GetAxis("DPad Y") > 0.3)
         {
@@ -84,6 +92,7 @@ public class transform3 : MonoBehaviour
             lp.SetActive(true);
             stag.SetActive(false);
             bear.SetActive(false);
+            wolf.SetActive(false);
         }
         else if ((Input.GetAxis("DPad Y") < -0.3))
         {
@@ -93,6 +102,17 @@ public class transform3 : MonoBehaviour
             bear.SetActive(true);
             stag.SetActive(false);
             lp.SetActive(false);
+            wolf.SetActive(false);
+        }
+        else if ((Input.GetAxis("DPad X") < -0.3))
+        {
+            form = 3;
+            wolf.transform.position = transform.position;
+            wolf.transform.rotation = lastRotation;
+            wolf.SetActive(true);
+            stag.SetActive(false);
+            lp.SetActive(false);
+            bear.SetActive(false);
         }
     }
 
@@ -100,11 +120,11 @@ public class transform3 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.JoystickButton4))
         {
-            form = (form + 1) % 3;
+            form = (form + 1) % 4;
         }
         else if (Input.GetKeyDown(KeyCode.JoystickButton5))
         {
-            form = (form - 1 + 3) % 3;
+            form = (form - 1 + 4) % 4;
         }
 
         if(form == 1)
@@ -114,6 +134,7 @@ public class transform3 : MonoBehaviour
             lp.SetActive(false);
             bear.SetActive(false);
             stag.SetActive(true);
+            wolf.SetActive(false);
         } else if (form == 0)
         {
             lp.transform.position = transform.position;
@@ -121,6 +142,7 @@ public class transform3 : MonoBehaviour
             lp.SetActive(true);
             stag.SetActive(false);
             bear.SetActive(false);
+            wolf.SetActive(false);
         } else if(form == 2)
         {
             bear.transform.position = transform.position;
@@ -128,6 +150,15 @@ public class transform3 : MonoBehaviour
             bear.SetActive(true);
             stag.SetActive(false);
             lp.SetActive(false);
+            wolf.SetActive(false);
+        } else
+        {
+            wolf.transform.position = transform.position;
+            wolf.transform.rotation = lastRotation;
+            wolf.SetActive(true);
+            stag.SetActive(false);
+            lp.SetActive(false);
+            bear.SetActive(false);
         }
     }
 }
