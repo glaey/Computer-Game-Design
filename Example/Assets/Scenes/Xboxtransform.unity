@@ -734,6 +734,7 @@ GameObject:
   - component: {fileID: 635499692}
   - component: {fileID: 635499691}
   - component: {fileID: 635499690}
+  - component: {fileID: 635499694}
   m_Layer: 0
   m_Name: Level1
   m_TagString: Untagged
@@ -827,6 +828,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635499688}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &635499694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635499688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0da89046c603c418d48928ba387b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteObj: {fileID: 4408367473402097237, guid: caa37228a2673f940bdd1349df04f520,
+    type: 3}
+  height: 1
 --- !u!1 &780630029
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneState: {fileID: 0}
+  levels: 0000000000
 --- !u!1 &993434767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1084,7 @@ GameObject:
   - component: {fileID: 1155555213}
   - component: {fileID: 1155555212}
   - component: {fileID: 1155555211}
+  - component: {fileID: 1155555216}
   m_Layer: 0
   m_Name: Escort
   m_TagString: Untagged
@@ -1160,6 +1178,21 @@ Transform:
   m_Father: {fileID: 2047676113}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155555216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155555210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0da89046c603c418d48928ba387b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteObj: {fileID: 4408367473402097237, guid: caa37228a2673f940bdd1349df04f520,
+    type: 3}
+  height: 1
 --- !u!4 &1360395424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3578900904841472760, guid: 7616953b7100aaf4e8dcb5908a9b8793,
@@ -1528,106 +1561,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3445226208663615707, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121510714554153202, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: linerCharge
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121510714554153202, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896689481221171459, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896689481716823744, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5559478996339115180, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8896689481160571848, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426905985488673433, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4515305478838710208, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8300377015711637621, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6004025714697466465, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.20895576
-      objectReference: {fileID: 0}
-    - target: {fileID: 6004025714697466465, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6004025714697466465, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
-      value: 0.0032348633
-      objectReference: {fileID: 0}
-    - target: {fileID: 4019373001497949461, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: m_Time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5042186309185012631, guid: 434d443db1043574cbc3578b603f2a19,
-        type: 3}
-      propertyPath: linearSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5559478996339115180, guid: 434d443db1043574cbc3578b603f2a19, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 434d443db1043574cbc3578b603f2a19, type: 3}
---- !u!1 &8896689481408226170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8896689481160473972, guid: 434d443db1043574cbc3578b603f2a19,
-    type: 3}
-  m_PrefabInstance: {fileID: 8896689481408226169}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8896689481408226171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8896689481408226170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28add01cf6502fc4fb21fc47711703bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCharging: 0
-  chargeDuration: 1.2
-  chargeSpeed: 2
-  linerCharge: 1
-  linearSpeed: 5
-  chargeCD: 2
-  activeCD: 0

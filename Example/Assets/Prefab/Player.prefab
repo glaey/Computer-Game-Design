@@ -494,8 +494,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.20149231
+        time: 0.0032348633
+        value: 0.20895576
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5511,25 +5511,6 @@ MonoBehaviour:
   JumpSpeed: 5
   isCharging: 0
   inventory: {fileID: 0}
---- !u!114 &5559478996339115180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8896689481160473972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28add01cf6502fc4fb21fc47711703bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCharging: 0
-  chargeDuration: 1.2
-  chargeSpeed: 2
-  linerCharge: 1
-  linearSpeed: 5
-  chargeCD: 2
-  activeCD: 0
 --- !u!114 &8896689481160571848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5549,6 +5530,25 @@ MonoBehaviour:
   JumpSpeed: 5
   isCharging: 0
   inventory: {fileID: 0}
+--- !u!114 &8896689481408226171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896689481160473972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28add01cf6502fc4fb21fc47711703bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCharging: 0
+  chargeDuration: 1.2
+  chargeSpeed: 2
+  linerCharge: 1
+  linearSpeed: 5
+  chargeCD: 2
+  activeCD: 0
 --- !u!1 &8896689481280960803
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,10 +5673,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 82471956826263436, guid: f406d1c0c739e449f904bf3954f17620, type: 3}
-    - {fileID: 114371360410458788, guid: f406d1c0c739e449f904bf3954f17620, type: 3}
-    - {fileID: 114855085461844592, guid: f406d1c0c739e449f904bf3954f17620, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f406d1c0c739e449f904bf3954f17620, type: 3}
 --- !u!4 &8643414333613820708 stripped
 Transform:
@@ -5770,14 +5767,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8896689481280960805}
     m_Modifications:
-    - target: {fileID: 100002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
-      propertyPath: m_Name
-      value: STAG
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
-      propertyPath: m_TagString
-      value: Stag
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5822,7 +5811,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
+      propertyPath: m_Name
+      value: STAG
+      objectReference: {fileID: 0}
     - target: {fileID: -3358997321263212520, guid: 403109c1728c545e989d4eda3e51bf27,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110909039533169616, guid: 403109c1728c545e989d4eda3e51bf27,
         type: 3}
       propertyPath: m_Enabled
       value: 0
