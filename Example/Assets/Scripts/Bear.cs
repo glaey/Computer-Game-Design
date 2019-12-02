@@ -19,7 +19,7 @@ public class Bear : MonoBehaviour
     {
         if (!activeCd)
         {
-            if ((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton1)))
+            if ((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton1)))
             {
                 Instantiate(swipe, transform.position, transform.rotation);
                 activeCd = true;
