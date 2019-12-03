@@ -91,7 +91,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9811321, g: 0.12102958, b: 0.1064436, a: 1}
+      key0: {r: 0.90727216, g: 0.9150943, b: 0, a: 1}
       key1: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
       key2: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 1}
@@ -218,8 +218,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9811321, g: 0.12102958, b: 0.1064436, a: 1}
-      key1: {r: 0.4339623, g: 0, b: 0, a: 1}
+      key0: {r: 0.98039216, g: 0.9150695, b: 0.10588233, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 1}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -345,7 +345,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9811321, g: 0.12102958, b: 0.1064436, a: 1}
+      key0: {r: 1, g: 0.98929787, b: 0, a: 1}
       key1: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
       key2: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 1}
@@ -459,3 +459,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0.2
+  angle: 315
