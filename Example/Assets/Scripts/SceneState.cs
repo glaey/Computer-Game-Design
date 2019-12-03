@@ -5,7 +5,6 @@ using UnityEngine;
 public class SceneState : MonoBehaviour
 {
     public GameObject sceneState;
-    public bool[] levels = new bool[5];
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +15,5 @@ public class SceneState : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void completeLevel(int level)
-    {
-        levels[level] = true;
     }
 }

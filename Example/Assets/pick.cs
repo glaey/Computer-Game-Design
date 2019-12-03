@@ -6,7 +6,6 @@ public class pick : MonoBehaviour
 {
   // Start is called before the first frame update
   public GameObject inventory;
-    public string type;
   void Start()
   {
     inventory = GameObject.Find("Inventory");
@@ -18,7 +17,6 @@ public class pick : MonoBehaviour
 
   }
 
-    /*
   void OnTriggerEnter(Collider other)
   {
     print("Trigger");
@@ -30,19 +28,7 @@ public class pick : MonoBehaviour
       }
       Destroy(gameObject);
     }
-  } */
-
-    void OnTriggerStay(Collider other)
-    {
-        if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
-        {
-            if (type == "Purple Mushroom")
-            {
-                inventory.GetComponent<inventory>().pickUpPurple();
-            }
-            Destroy(gameObject);
-        }
-    }
+  }
 
     // void OnCollisionEnter(Collision collision)
     // {

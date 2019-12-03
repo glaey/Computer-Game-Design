@@ -14,7 +14,7 @@ public class Wolf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
         {
             particleSystem.Play();
             GameObject[] critters = GameObject.FindGameObjectsWithTag("Critter");

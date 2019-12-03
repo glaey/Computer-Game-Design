@@ -118,11 +118,11 @@ public class transform3 : MonoBehaviour
 
     void checkShapeShift()
     {
-        if (Input.GetKeyDown(KeyCode.JoystickButton4) || Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.JoystickButton4))
         {
             form = (form + 1) % 4;
         }
-        else if (Input.GetKeyDown(KeyCode.JoystickButton5) || Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKeyDown(KeyCode.JoystickButton5))
         {
             form = (form - 1 + 4) % 4;
         }
