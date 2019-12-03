@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.meta
+*.meta~HEAD
+*.meta~7e68314d9339ea365113c8a5048963b28e2b61b7
