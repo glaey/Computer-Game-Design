@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CritterTrigger : MonoBehaviour
 {
-    public GameObject triggerDoor;
-    TriggerMove triggerMove;
+    public GameObject[] triggerDoor;
     // Start is called before the first frame update
     void Start()
     {
-        triggerMove = triggerDoor.GetComponent<TriggerMove>();
+        
     }
 
     // Update is called once per frame
@@ -22,10 +21,13 @@ public class CritterTrigger : MonoBehaviour
     {
         if(other.tag == "Critter" || other.tag == "Baby")
         {
-            triggerMove.Increment();
-            print("bunny desu");
-            other.gameObject.GetComponent<Critter>().Stop();
-            other.gameObject.transform.position = transform.position;
+            for(int i = 0; i < triggerDoor.Length; i++)
+            {
+                triggerDoor[i].GetComponent<TriggerMove>().Increment();
+                print("bunny desu");
+                //other.gameObject.GetComponent<Critter>().Stop();
+                other.gameObject.transform.position = transform.position;
+            }
         }
     }
 
@@ -33,8 +35,10 @@ public class CritterTrigger : MonoBehaviour
     {
         if (other.tag == "Critter" || other.tag == "Baby")
         {
-            triggerMove.Decrement();
-            print("bunny out desu");
+            for (int i = 0; i < triggerDoor.Length; i++)
+            {
+                triggerDoor[i].GetComponent<TriggerMove>().Decrement();
+            }
         }
     }
 }
