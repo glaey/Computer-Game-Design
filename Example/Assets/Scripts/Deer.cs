@@ -44,7 +44,7 @@ public class Deer : MonoBehaviour
             Charge();
             return;
         }
-        if ((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !activeCD)
+        if ((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !activeCD)
         {
             isCharging = true;
             movement.isCharging = true;

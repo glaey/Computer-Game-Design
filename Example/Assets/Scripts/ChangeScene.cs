@@ -16,7 +16,7 @@ public class ChangeScene : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         
-        if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
             print("switching");
             if (SceneName != "Xboxtransform")
