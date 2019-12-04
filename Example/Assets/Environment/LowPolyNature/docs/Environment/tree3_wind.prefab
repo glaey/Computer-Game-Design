@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 4077502553816870}
   - component: {fileID: 95876111698765078}
   - component: {fileID: 208725683824739826}
+  - component: {fileID: 5292460152094913924}
   m_Layer: 0
   m_Name: tree3_wind
   m_TagString: Untagged
@@ -57,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1321030914468550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.0933, y: 0.24, z: -4.91}
-  m_LocalScale: {x: 0.8775736, y: 0.8775736, z: 0.8775736}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 4292890351287738}
   - {fileID: 4909149068628102}
@@ -99,6 +100,20 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.83, z: 0}
   m_TimeToStationary: 0.5
+--- !u!64 &5292460152094913924
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321030914468550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &1486031624709690
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class ChangeScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F))
         {
             print("switching");
-            if (SceneName != "Xboxtransform")
+            if (SceneName != "Presentation2")
             {
                 StartCoroutine(LoadLevel());
             }
@@ -41,7 +41,7 @@ public class ChangeScene : MonoBehaviour
     IEnumerator LoadMainLevel()
     {
         string tmpname = SceneManager.GetActiveScene().name;
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Xboxtransform"));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Presentation2"));
         yield return null;
         GameObject.Find("Manager").GetComponent<SceneState>().sceneState.SetActive(true);
         SceneManager.UnloadSceneAsync(tmpname);
