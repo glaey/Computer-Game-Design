@@ -65,8 +65,8 @@ public class move2 : MonoBehaviour
       else
       {
         _animator.SetBool("is_in_air", false);
-        _animator.SetBool("run", move.magnitude > 0);
-
+        _animator.SetBool("isWalking", move.magnitude > 0);
+        
 
         // Debug.Log(_animator.GetBool("run"));
 
