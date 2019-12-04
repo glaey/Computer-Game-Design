@@ -26,18 +26,26 @@ public class TriggerMove : MonoBehaviour
             if (open)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y - (distance * Time.deltaTime / dur), transform.position.z);
-                if(transform.position.y < startY - distance)
+                if(transform.position.y < startY - distance && upwards)
                 {
+                    print("first con");
+                    moving = false;
+                } else if (transform.position.y > startY -distance && !upwards)
+                {
+                    print("2 con");
                     moving = false;
                 }
             } else
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + (distance * Time.deltaTime / dur), transform.position.z);
-                if (transform.position.y > startY)
+                if (transform.position.y > startY && upwards)
+                {
+                    moving = false;
+                } else if (transform.position.y < startY && !upwards)
                 {
                     moving = false;
                 }
-            }
+            } 
             
         }
     }
@@ -49,8 +57,9 @@ public class TriggerMove : MonoBehaviour
         {
             open = true;
             moving = true;
+
+            print("moving");
         }
-        print(Current);
     }
 
     public void Decrement()
@@ -60,7 +69,8 @@ public class TriggerMove : MonoBehaviour
         {
             open = false;
             moving = true;
+
+            print("returning");
         }
-        print(Current);
     }
 }
