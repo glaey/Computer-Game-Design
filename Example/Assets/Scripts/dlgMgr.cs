@@ -8,6 +8,7 @@ public class dlgMgr : MonoBehaviour
 
   public Text name;
   public Text dlgText;
+  public Animator animator;
 
   public Queue<string> sentences;
   // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class dlgMgr : MonoBehaviour
 
   public void DisplayNextSentence()
   {
+    animator.SetBool("isOpen",true);
     if (sentences.Count == 0)
     {
       EndDialogue();
@@ -52,5 +54,7 @@ public class dlgMgr : MonoBehaviour
   public void EndDialogue()
   {
     print("end of conversation");
+    animator.SetBool("isOpen",false);
   }
+  
 }

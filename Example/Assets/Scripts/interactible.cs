@@ -6,7 +6,7 @@ public class interactible : MonoBehaviour
 {
   Vector3 position;
   public GameObject spriteObj;
-  public float height = 1.0f;
+  public float height = 2.0f;
   // Start is called before the first frame update
   void Start()
   {
