@@ -25,7 +25,7 @@ public class Crack : MonoBehaviour
     {
         if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<move2>().isCharging)
         {
-            other.gameObject.GetComponent<move2>().EndCharge(0.5f);
+            other.gameObject.GetComponent<Deer>().EndCharge(0.5f);
             Destroy(gameObject);
             newPush.SetActive(true);
         }
@@ -35,7 +35,7 @@ public class Crack : MonoBehaviour
     {
         if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<move2>().isCharging)
         {
-            other.gameObject.GetComponent<move2>().EndCharge(0.5f);
+            other.gameObject.GetComponent<Deer>().EndCharge(0.5f);
             Destroy(gameObject);
             newPush.SetActive(true);
 
