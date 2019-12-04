@@ -5440,6 +5440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f3a8adbe5aaab41946987294d0da44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roarRadius: 4
+  roarCD: 0.5
 --- !u!114 &8896689481221171459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5767,6 +5769,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8896689481280960805}
     m_Modifications:
+    - target: {fileID: 100002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
+      propertyPath: m_Name
+      value: STAG
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5810,10 +5816,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 403109c1728c545e989d4eda3e51bf27, type: 3}
-      propertyPath: m_Name
-      value: STAG
       objectReference: {fileID: 0}
     - target: {fileID: -3358997321263212520, guid: 403109c1728c545e989d4eda3e51bf27,
         type: 3}

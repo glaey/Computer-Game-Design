@@ -49,4 +49,11 @@ public class Critter : MonoBehaviour
         scared = true;
         animator.SetBool("isRunning", true);
     }
+
+    public void Stop()
+    {
+        scared = false;
+        scareSum = 0;
+        animator.SetBool("isRunning", false);
+    }
 }

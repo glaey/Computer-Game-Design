@@ -24,7 +24,7 @@ public class Wolf : MonoBehaviour
     {
         if (!activeCD)
         {
-            if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
                 Howl();
                 activeCD = true;
