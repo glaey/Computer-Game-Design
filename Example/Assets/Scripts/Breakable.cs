@@ -18,18 +18,18 @@ public class Breakable : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<move2>().isCharging)
+        if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<Deer>().isCharging)
         {
-            other.gameObject.GetComponent<move2>().EndCharge(0.5f);
+            other.gameObject.GetComponent<Deer>().EndCharge(0.5f);
             Destroy(gameObject);
         }
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<move2>().isCharging)
+        if (other.gameObject.tag == "Stag" && other.gameObject.GetComponent<Deer>().isCharging)
         {
-            other.gameObject.GetComponent<move2>().EndCharge(0.5f);
+            other.gameObject.GetComponent<Deer>().EndCharge(0.5f);
             Destroy(gameObject);
         }
     }
