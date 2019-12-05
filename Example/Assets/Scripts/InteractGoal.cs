@@ -16,7 +16,13 @@ public class InteractGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)){
+        
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
+        {
             StartCoroutine(CompleteLevel());
         }
     }

@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1884597401360746, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
       propertyPath: m_TagString
-      value: Critter
+      value: Baby
       objectReference: {fileID: 0}
     - target: {fileID: 4399031230455582, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
       propertyPath: m_LocalPosition.x
