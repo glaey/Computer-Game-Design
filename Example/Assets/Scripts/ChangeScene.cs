@@ -41,7 +41,7 @@ public class ChangeScene : MonoBehaviour
     IEnumerator LoadMainLevel()
     {
         string tmpname = SceneManager.GetActiveScene().name;
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Presentation2"));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(SceneName));
         yield return null;
         GameObject.Find("Manager").GetComponent<SceneState>().sceneState.SetActive(true);
         SceneManager.UnloadSceneAsync(tmpname);
