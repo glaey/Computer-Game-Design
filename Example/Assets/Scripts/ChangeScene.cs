@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public string SceneName;
+    public bool toLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,7 @@ public class ChangeScene : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F))
         {
-            print("switching");
-            if (SceneName != "Presentation2")
+            if (toLevel)
             {
                 StartCoroutine(LoadLevel());
             }
