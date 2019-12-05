@@ -6,10 +6,11 @@ public class Call : MonoBehaviour
 {
     public GameObject target;
     public float speed;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -18,6 +19,11 @@ public class Call : MonoBehaviour
         if (Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.JoystickButton3))
         {
             gameObject.transform.position = gameObject.transform.position + ((target.gameObject.transform.position - gameObject.transform.position).normalized * speed * Time.deltaTime);
+            transform.rotation = Quaternion.LookRotation((target.gameObject.transform.position - gameObject.transform.position), new Vector3(0, 1f, 0));
+            animator.SetBool("isRunning", true);
+        } else
+        {
+            animator.SetBool("isRunning", false);
         }
     }
 }

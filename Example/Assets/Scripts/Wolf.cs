@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wolf : MonoBehaviour
 {
-    ParticleSystem particleSystem;
+    private ParticleSystem particleSystem;
     public float roarRadius;
     public float roarCD;
     float timer;
@@ -15,7 +15,7 @@ public class Wolf : MonoBehaviour
     void Start()
     {
         movement = GetComponent<move2>();
-        particleSystem = GetComponent<ParticleSystem>();
+        particleSystem = gameObject.GetComponent<ParticleSystem>();
         animator = GetComponent<Animator>();
     }
 

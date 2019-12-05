@@ -24,9 +24,11 @@ public class CritterTrigger : MonoBehaviour
             for(int i = 0; i < triggerDoor.Length; i++)
             {
                 triggerDoor[i].GetComponent<TriggerMove>().Increment();
-                print("bunny desu");
-                //other.gameObject.GetComponent<Critter>().Stop();
                 other.gameObject.transform.position = transform.position;
+                if (other.tag == "Critter")
+                {
+                    other.gameObject.GetComponent<Critter>().Stop();
+                }
             }
         }
     }
