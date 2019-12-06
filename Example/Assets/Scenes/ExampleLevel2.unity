@@ -237,6 +237,16 @@ PrefabInstance:
       propertyPath: scnMngr
       value: 
       objectReference: {fileID: 160575679}
+    - target: {fileID: 9168801657250777759, guid: aa1a926882e04a44ba6de85eac8fc9b3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.531
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196889720162164466, guid: aa1a926882e04a44ba6de85eac8fc9b3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1a926882e04a44ba6de85eac8fc9b3, type: 3}
 --- !u!4 &2032462316 stripped
