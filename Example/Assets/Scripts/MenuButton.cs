@@ -23,7 +23,15 @@ public class MenuButton : MonoBehaviour
             if(Input.GetAxis("Submit")==1){
                 animator.SetBool("pressed",true);
                 if(thisIndex==0)
-                SceneManager.LoadScene("Xboxtransform");
+                {SceneManager.LoadScene("Presentation2");}
+                else if(thisIndex==1)
+                {
+                #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;//用于退出运行
+                #else
+                Application.Quit();
+                #endif
+                }
             }else if(animator.GetBool("pressed")){
                 animator.SetBool("pressed",false);
                 //animatorFutions.disableOnce=true;
