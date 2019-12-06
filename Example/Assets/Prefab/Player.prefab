@@ -30,7 +30,7 @@ MonoBehaviour:
   _moveDirection: {x: 0, y: 0, z: 0}
   speed: 5
   rotationSpeed: 2000
-  JumpSpeed: 5
+  JumpSpeed: 7
   isCharging: 0
   inventory: {fileID: 0}
 --- !u!65 &689503111190094215
@@ -62,7 +62,7 @@ MonoBehaviour:
   _moveDirection: {x: 0, y: 0, z: 0}
   speed: 5
   rotationSpeed: 2000
-  JumpSpeed: 5
+  JumpSpeed: 7
   isCharging: 0
   inventory: {fileID: 0}
 --- !u!114 &8451437726683310274
@@ -4839,7 +4839,7 @@ MonoBehaviour:
   _moveDirection: {x: 0, y: 0, z: 0}
   speed: 5
   rotationSpeed: 2000
-  JumpSpeed: 5
+  JumpSpeed: 7
   isCharging: 0
   inventory: {fileID: 0}
 --- !u!114 &3019875215397536773
@@ -10074,6 +10074,14 @@ PrefabInstance:
     - target: {fileID: 81070925, guid: 7730e5f64ed89b0478f85a91ad8bb92e, type: 3}
       propertyPath: rotationSpeed
       value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 81070925, guid: 7730e5f64ed89b0478f85a91ad8bb92e, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81070925, guid: 7730e5f64ed89b0478f85a91ad8bb92e, type: 3}
+      propertyPath: JumpSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6539480845120181181, guid: 7730e5f64ed89b0478f85a91ad8bb92e,
         type: 3}
