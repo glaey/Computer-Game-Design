@@ -16,18 +16,18 @@ public class Girl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton3))
+        if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton1))
         {
             particleSystem.Play(false);
             particleSystem.loop = true;
             Call();
         }
-        else if (Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.JoystickButton3))
+        else if (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.JoystickButton1))
         {
             
             Call();
         }
-        else if (Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.JoystickButton3))
+        else if (Input.GetKeyUp(KeyCode.R) || Input.GetKeyUp(KeyCode.JoystickButton1))
         {
             particleSystem.loop = false;
            

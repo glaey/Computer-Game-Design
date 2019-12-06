@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TriggerMove : MonoBehaviour
 {
+    public bool movebased;
     public int Req;
     private int Current;
     private bool open;
@@ -12,41 +13,89 @@ public class TriggerMove : MonoBehaviour
     public float dur;
     private float startY;
     public bool upwards;
+    private float percentage = 1f;
+    Material m;
     // Start is called before the first frame update
     void Start()
     {
+        m = gameObject.GetComponent<MeshRenderer>().material;
         startY = transform.position.y;
     }
+
+
+    // Start is called before the first frame update
+   
 
     // Update is called once per frame
     void Update()
     {
         if (moving)
         {
-            if (open)
+            if (movebased)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y - (distance * Time.deltaTime / dur), transform.position.z);
-                if(transform.position.y < startY - distance && upwards)
-                {
-                    print("first con");
-                    moving = false;
-                } else if (transform.position.y > startY -distance && !upwards)
-                {
-                    print("2 con");
-                    moving = false;
-                }
-            } else
+                MoveDoor();
+            }
+            else
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y + (distance * Time.deltaTime / dur), transform.position.z);
-                if (transform.position.y > startY && upwards)
-                {
-                    moving = false;
-                } else if (transform.position.y < startY && !upwards)
-                {
-                    moving = false;
-                }
-            } 
-            
+                MagicDoor();
+            }
+        }
+    }
+
+    void MoveDoor()
+    {
+        if (open)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - (distance * Time.deltaTime / dur), transform.position.z);
+            if (transform.position.y < startY - distance && upwards)
+            {
+                print("first con");
+                moving = false;
+            }
+            else if (transform.position.y > startY - distance && !upwards)
+            {
+                print("2 con");
+                moving = false;
+            }
+        }
+        else
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + (distance * Time.deltaTime / dur), transform.position.z);
+            if (transform.position.y > startY && upwards)
+            {
+                moving = false;
+            }
+            else if (transform.position.y < startY && !upwards)
+            {
+                moving = false;
+            }
+        }
+    }
+
+    void MagicDoor()
+    {
+        
+        if (open)
+        {
+            print(percentage + "% open");
+            percentage -= (Time.deltaTime / dur);
+            if(percentage < 0)
+            {
+                moving = false;
+                gameObject.GetComponent<BoxCollider>().enabled = false;
+            }
+            m.SetFloat("_InvFade", percentage);
+        }
+        else
+        {
+            print(percentage + "% open");
+            percentage += (Time.deltaTime / dur);
+            if(percentage > 1)
+            {
+                moving = false;
+                gameObject.GetComponent<BoxCollider>().enabled = true;
+            }
+            m.SetFloat("_InvFade", percentage);
         }
     }
 
