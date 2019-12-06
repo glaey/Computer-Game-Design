@@ -242,11 +242,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4000215221035899950, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: CritterRabbit
-      objectReference: {fileID: 0}
     - target: {fileID: 4001968958197861830, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,6 +296,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000215221035899950, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: CritterRabbit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b, type: 3}
@@ -388,6 +388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5072889550684837654, guid: bc3128ee269bd3242904335e622b4e8b,
         type: 3}
+      propertyPath: triggerDoor.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072889550684837654, guid: bc3128ee269bd3242904335e622b4e8b,
+        type: 3}
       propertyPath: triggerDoor
       value: 
       objectReference: {fileID: 0}
@@ -396,6 +401,11 @@ PrefabInstance:
       propertyPath: triggerDoor.Array.data[0]
       value: 
       objectReference: {fileID: 1601954911}
+    - target: {fileID: 5072889550684837654, guid: bc3128ee269bd3242904335e622b4e8b,
+        type: 3}
+      propertyPath: triggerDoor.Array.data[1]
+      value: 
+      objectReference: {fileID: 265275499}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc3128ee269bd3242904335e622b4e8b, type: 3}
 --- !u!1 &993434767
@@ -520,11 +530,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4000215221035899950, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: CritterRabbit (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4001968958197861830, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -579,6 +584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000215221035899950, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: CritterRabbit (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1401455522, guid: 2a0c79e7c68f4a84992b74d3a2e79b4b, type: 3}
       propertyPath: m_Constraints
@@ -845,11 +855,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3802196127844630880, guid: 19c10893b7d497f47bb77c52fd8094e7,
-        type: 3}
-      propertyPath: m_Name
-      value: PushableCube
-      objectReference: {fileID: 0}
     - target: {fileID: 3802196127844630884, guid: 19c10893b7d497f47bb77c52fd8094e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -919,6 +924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802196127844630880, guid: 19c10893b7d497f47bb77c52fd8094e7,
+        type: 3}
+      propertyPath: m_Name
+      value: PushableCube
       objectReference: {fileID: 0}
     - target: {fileID: 3802196127844630881, guid: 19c10893b7d497f47bb77c52fd8094e7,
         type: 3}

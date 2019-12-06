@@ -4330,7 +4330,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348603943}
-  m_LocalRotation: {x: 0.15250587, y: -0.35756797, z: 0.05930861, w: 0.91943985}
+  m_LocalRotation: {x: 0.15241152, y: -0.3590276, z: 0.059550714, w: 0.9188709}
   m_LocalPosition: {x: 78.9, y: 73.9, z: -103.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5457,11 +5457,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1483330440}
     m_Modifications:
-    - target: {fileID: 3802196127844630880, guid: 19c10893b7d497f47bb77c52fd8094e7,
-        type: 3}
-      propertyPath: m_Name
-      value: PushableCube
-      objectReference: {fileID: 0}
     - target: {fileID: 3802196127844630884, guid: 19c10893b7d497f47bb77c52fd8094e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5531,6 +5526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802196127844630880, guid: 19c10893b7d497f47bb77c52fd8094e7,
+        type: 3}
+      propertyPath: m_Name
+      value: PushableCube
       objectReference: {fileID: 0}
     - target: {fileID: 3802196127844630881, guid: 19c10893b7d497f47bb77c52fd8094e7,
         type: 3}
@@ -6888,11 +6888,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: game_design-Chara.copy2
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 62d930d499288164483bf2696d448382,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 4740dc8480af1424e8e9d7a30e120d35, type: 2}
     - target: {fileID: -4216859302048453862, guid: 62d930d499288164483bf2696d448382,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6963,6 +6958,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.7500006
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 62d930d499288164483bf2696d448382,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4740dc8480af1424e8e9d7a30e120d35, type: 2}
     - target: {fileID: -5941774819940363409, guid: 62d930d499288164483bf2696d448382,
         type: 3}
       propertyPath: m_LocalPosition.x
