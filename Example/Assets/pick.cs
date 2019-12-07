@@ -40,7 +40,12 @@ public class pick : MonoBehaviour
             {
                 inventory.GetComponent<inventory>().pickUpPurple();
             }
+            else if(type=="Yellow Mushroom")
+            {
+              inventory.GetComponent<inventory>().pickUpYellow();
+            }
             Destroy(gameObject);
+             Debug.Log("in");
         }
     }
 
