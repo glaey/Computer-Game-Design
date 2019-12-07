@@ -425,16 +425,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.10000005
       objectReference: {fileID: 0}
-    - target: {fileID: -6827602402819196172, guid: fe42041fd6e66114aa6b5f5551e141e4,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6956447565815921471, guid: fe42041fd6e66114aa6b5f5551e141e4,
         type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1589716422}
+    - target: {fileID: -6827602402819196172, guid: fe42041fd6e66114aa6b5f5551e141e4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe42041fd6e66114aa6b5f5551e141e4, type: 3}
 --- !u!4 &364121015 stripped
@@ -721,6 +721,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377808740}
     m_Modifications:
+    - target: {fileID: 1175587657984925096, guid: 38906200a15fb481cbd02138b17c8e17,
+        type: 3}
+      propertyPath: m_Name
+      value: TeleportToIsland
+      objectReference: {fileID: 0}
     - target: {fileID: 1175587657984925099, guid: 38906200a15fb481cbd02138b17c8e17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -775,11 +780,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175587657984925096, guid: 38906200a15fb481cbd02138b17c8e17,
-        type: 3}
-      propertyPath: m_Name
-      value: TeleportToIsland
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38906200a15fb481cbd02138b17c8e17, type: 3}
@@ -1423,16 +1423,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.10000005
       objectReference: {fileID: 0}
-    - target: {fileID: -6827602402819196172, guid: fe42041fd6e66114aa6b5f5551e141e4,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6956447565815921471, guid: fe42041fd6e66114aa6b5f5551e141e4,
         type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1589716422}
+    - target: {fileID: -6827602402819196172, guid: fe42041fd6e66114aa6b5f5551e141e4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe42041fd6e66114aa6b5f5551e141e4, type: 3}
 --- !u!1 &963194225
@@ -1876,6 +1876,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377808740}
     m_Modifications:
+    - target: {fileID: 1175587657984925096, guid: 38906200a15fb481cbd02138b17c8e17,
+        type: 3}
+      propertyPath: m_Name
+      value: TeleportToCave
+      objectReference: {fileID: 0}
     - target: {fileID: 1175587657984925099, guid: 38906200a15fb481cbd02138b17c8e17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1931,11 +1936,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1175587657984925096, guid: 38906200a15fb481cbd02138b17c8e17,
-        type: 3}
-      propertyPath: m_Name
-      value: TeleportToCave
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38906200a15fb481cbd02138b17c8e17, type: 3}
 --- !u!1001 &1279347898
@@ -1945,6 +1945,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377808740}
     m_Modifications:
+    - target: {fileID: 1175587657984925096, guid: 38906200a15fb481cbd02138b17c8e17,
+        type: 3}
+      propertyPath: m_Name
+      value: TeleportToForeast1
+      objectReference: {fileID: 0}
     - target: {fileID: 1175587657984925099, guid: 38906200a15fb481cbd02138b17c8e17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1999,11 +2004,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175587657984925096, guid: 38906200a15fb481cbd02138b17c8e17,
-        type: 3}
-      propertyPath: m_Name
-      value: TeleportToForeast1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38906200a15fb481cbd02138b17c8e17, type: 3}
@@ -2479,16 +2479,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.10000005
       objectReference: {fileID: 0}
-    - target: {fileID: -6827602402819196172, guid: fe42041fd6e66114aa6b5f5551e141e4,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6956447565815921471, guid: fe42041fd6e66114aa6b5f5551e141e4,
         type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1589716422}
+    - target: {fileID: -6827602402819196172, guid: fe42041fd6e66114aa6b5f5551e141e4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe42041fd6e66114aa6b5f5551e141e4, type: 3}
 --- !u!114 &1886309541 stripped
