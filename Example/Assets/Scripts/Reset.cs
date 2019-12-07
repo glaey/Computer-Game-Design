@@ -25,7 +25,7 @@ public class Reset : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.gameObject.tag == "Baby"  || collider.gameObject.tag == "Bear" || collider.transform.parent.tag == "Player")
+        if(collider.gameObject.tag == "Baby"  || collider.gameObject.tag == "Critter" || collider.transform.parent.tag == "Player")
         {
             scnMngr.Restart();
         }

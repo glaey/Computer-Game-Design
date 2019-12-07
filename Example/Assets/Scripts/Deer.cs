@@ -52,6 +52,11 @@ public class Deer : MonoBehaviour
             trials.SetActive(true);
         }
     }
+    void OnEnable()
+    {
+        activeCD = false;
+        timeSum = 0f;
+    }
 
     private void Charge()
     {
