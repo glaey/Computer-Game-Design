@@ -6,10 +6,10 @@ public class Girl : MonoBehaviour
 {
     private ParticleSystem particleSystem;
     public GameObject[] penguins;
+    private bool firstCall = true;
     // Start is called before the first frame update
     void Start()
     {
-        penguins = GameObject.FindGameObjectsWithTag("Baby");
         particleSystem = gameObject.GetComponent<ParticleSystem>();
     }
 
@@ -36,6 +36,11 @@ public class Girl : MonoBehaviour
 
     void Call()
     {
+        if(firstCall == true)
+        {
+            penguins = GameObject.FindGameObjectsWithTag("Baby");
+            firstCall = false;
+        }
         for (int i = 0; i < penguins.Length; i++)
         {
             penguins[i].GetComponent<Call>().Move(transform.position);
