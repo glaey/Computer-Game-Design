@@ -8,10 +8,12 @@ public class Bear : MonoBehaviour
     public float SwipeCd = 1f;
     float timesum;
     public GameObject swipe;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         //swipe = GameObject.Find("Swipe").gameObject;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class Bear : MonoBehaviour
             {
                 Instantiate(swipe, transform.position, transform.rotation);
                 activeCd = true;
+                audioSource.Play();
             }
         }
         else

@@ -4691,6 +4691,102 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!82 &232088726586842133
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5962250557243932539}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2058a596aa58f094094bc97c95211b13, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!199 &431703093679910707
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -14652,6 +14748,21 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 82051094445813220, guid: 6ee0769bd911abd4aad799c0b81cab00,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f38e69845802cbb4cb2af6fc1e889d37, type: 3}
+    - target: {fileID: 82051094445813220, guid: 6ee0769bd911abd4aad799c0b81cab00,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82051094445813220, guid: 6ee0769bd911abd4aad799c0b81cab00,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114372623399879820, guid: 6ee0769bd911abd4aad799c0b81cab00, type: 3}
     - {fileID: 195741365783114180, guid: 6ee0769bd911abd4aad799c0b81cab00, type: 3}
@@ -14848,15 +14959,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7730e5f64ed89b0478f85a91ad8bb92e, type: 3}
---- !u!1 &7065436795468402859 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 318516904988465627, guid: 7730e5f64ed89b0478f85a91ad8bb92e,
-    type: 3}
-  m_PrefabInstance: {fileID: 7378831488073402736}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6077080533509644984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3616602332581440456, guid: 7730e5f64ed89b0478f85a91ad8bb92e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7378831488073402736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7065436795468402859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 318516904988465627, guid: 7730e5f64ed89b0478f85a91ad8bb92e,
     type: 3}
   m_PrefabInstance: {fileID: 7378831488073402736}
   m_PrefabAsset: {fileID: 0}
@@ -15014,15 +15125,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62fdfa4655f50a04087feb4192779c3e, type: 3}
---- !u!1 &5962250557243932539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4286272799396599250, guid: 62fdfa4655f50a04087feb4192779c3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 7621723533727640233}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7270343145688190312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 945966745282340801, guid: 62fdfa4655f50a04087feb4192779c3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7621723533727640233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5962250557243932539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4286272799396599250, guid: 62fdfa4655f50a04087feb4192779c3e,
     type: 3}
   m_PrefabInstance: {fileID: 7621723533727640233}
   m_PrefabAsset: {fileID: 0}
@@ -15083,15 +15194,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f406d1c0c739e449f904bf3954f17620, type: 3}
---- !u!4 &8643414333613820708 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4533101746271982, guid: f406d1c0c739e449f904bf3954f17620,
-    type: 3}
-  m_PrefabInstance: {fileID: 8638899548502326730}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8639947145085868678 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1349619287926604, guid: f406d1c0c739e449f904bf3954f17620,
+    type: 3}
+  m_PrefabInstance: {fileID: 8638899548502326730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8643414333613820708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4533101746271982, guid: f406d1c0c739e449f904bf3954f17620,
     type: 3}
   m_PrefabInstance: {fileID: 8638899548502326730}
   m_PrefabAsset: {fileID: 0}

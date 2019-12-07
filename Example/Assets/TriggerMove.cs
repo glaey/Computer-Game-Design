@@ -15,11 +15,13 @@ public class TriggerMove : MonoBehaviour
     public bool upwards;
     private float percentage = 1f;
     Material m;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         m = gameObject.GetComponent<MeshRenderer>().material;
         startY = transform.position.y;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
 
@@ -107,7 +109,10 @@ public class TriggerMove : MonoBehaviour
             open = true;
             moving = true;
 
-            print("moving");
+            if (movebased)
+            {
+                audioSource.Play();
+            }
         }
     }
 
@@ -119,7 +124,10 @@ public class TriggerMove : MonoBehaviour
             open = false;
             moving = true;
 
-            print("returning");
+            if (movebased)
+            {
+                audioSource.Play();
+            }
         }
     }
 }
