@@ -36,6 +36,7 @@ public class Girl : MonoBehaviour
 
     void Call()
     {
+        
         if(firstCall == true)
         {
             penguins = GameObject.FindGameObjectsWithTag("Baby");

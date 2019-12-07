@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class EscortGoal : MonoBehaviour
 {
     public int level;
+    public string mainLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,7 @@ public class EscortGoal : MonoBehaviour
     IEnumerator CompleteLevel()
     {
         string tmpname = SceneManager.GetActiveScene().name;
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Xboxtransform"));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(mainLevel));
         yield return null;
         GameObject.Find("Manager").GetComponent<SceneState>().sceneState.SetActive(true);
         GameObject.Find("Manager").GetComponent<SceneState>().completeLevel(level);
