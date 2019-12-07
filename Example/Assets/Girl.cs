@@ -7,12 +7,12 @@ public class Girl : MonoBehaviour
     private ParticleSystem particleSystem;
     public GameObject[] penguins;
     private bool firstCall = true;
-    private AudioSource audioSource;
+    private AudioSource[] audioSource;
     // Start is called before the first frame update
     void Start()
     {
         particleSystem = gameObject.GetComponent<ParticleSystem>();
-        audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource = transform.parent.gameObject.GetComponents<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,8 +23,8 @@ public class Girl : MonoBehaviour
             particleSystem.Play(false);
             particleSystem.loop = true;
             Call();
-            audioSource.Play();
-            audioSource.loop = true;
+            audioSource[0].Play();
+            audioSource[0].loop = true;
         }
         else if (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.JoystickButton1))
         {
@@ -34,8 +34,8 @@ public class Girl : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.R) || Input.GetKeyUp(KeyCode.JoystickButton1))
         {
             particleSystem.loop = false;
-            audioSource.Stop();
-            audioSource.loop = false;
+            audioSource[0].Stop();
+            audioSource[1].loop = false;
            
         }
     }
