@@ -17,10 +17,8 @@ public class CircleMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (infinite)
-        {
-            transform.Rotate(rotationCircle, -angle * Time.deltaTime / duration);
-        } else
+        transform.Rotate(rotationCircle, -angle * Time.deltaTime / duration);
+        if (!infinite)
         {
             rotation += angle * Time.deltaTime / duration;
             if (rotation >= angle)
