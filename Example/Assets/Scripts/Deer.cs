@@ -18,6 +18,7 @@ public class Deer : MonoBehaviour
 
     private CameraShake cameraShake;
     GameObject trials;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class Deer : MonoBehaviour
         cameraShake = GameObject.Find("Main Camera").GetComponent<CameraShake>();
         trials = GameObject.Find("Trials").gameObject;
         trials.SetActive(false);
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -88,5 +90,9 @@ public class Deer : MonoBehaviour
         cameraShake.startShaking(shakeDur);
         activeCD = true;
         trials.SetActive(false);
+        if(shakeDur > 0)
+        {
+            audioSource.Play();
+        }
     }
 }
