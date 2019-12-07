@@ -234,7 +234,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85462869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa8df2eebb2025439df6d68d846a37f, type: 3}
   m_Name: 
@@ -256,6 +256,35 @@ CapsuleCollider:
   m_Height: 2.33
   m_Direction: 1
   m_Center: {x: 0, y: 0.17, z: 0}
+--- !u!114 &85462872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85462869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0da89046c603c418d48928ba387b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteObj: {fileID: 4408367473402097237, guid: caa37228a2673f940bdd1349df04f520,
+    type: 3}
+  height: 1
+--- !u!114 &85462873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85462869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f23aa3a0d0971347b699d0671409b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 2
+  mainLevel: Presentation2
 --- !u!1001 &270191123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -396,7 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 329838963}
   m_Layer: 0
-  m_Name: GameState
+  m_Name: level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -518,7 +547,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2432297811813691151, guid: 5a3df078b8c9db1499954cd0d085c458,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432297811813691151, guid: 5a3df078b8c9db1499954cd0d085c458,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 356551727700240443, guid: 5a3df078b8c9db1499954cd0d085c458, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5a3df078b8c9db1499954cd0d085c458, type: 3}
 --- !u!4 &467847640 stripped
 Transform:
@@ -526,6 +566,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 467847639}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &467847641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8482050772240338924, guid: 5a3df078b8c9db1499954cd0d085c458,
+    type: 3}
+  m_PrefabInstance: {fileID: 467847639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &467847642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467847641}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0da89046c603c418d48928ba387b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteObj: {fileID: 4408367473402097237, guid: caa37228a2673f940bdd1349df04f520,
+    type: 3}
+  height: 1
+--- !u!114 &467847643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467847641}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f23aa3a0d0971347b699d0671409b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 2
+  mainLevel: Presentation2
 --- !u!1 &594615003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,7 +1265,7 @@ GameObject:
   - component: {fileID: 1273608435}
   - component: {fileID: 1273608436}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: SceneMngr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,7 +1293,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273608434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d2b62ada45b9a46a26e2e9f2bde365, type: 3}
   m_Name: 

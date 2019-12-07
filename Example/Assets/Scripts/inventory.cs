@@ -10,15 +10,19 @@ public class inventory : MonoBehaviour
     int purpleMush = 0;
     int yellowMush = 0;
     // Start is called before the first frame update
+    GameObject manager;
     void Start()
     {
-        
+        manager=GameObject.Find("Manager");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(manager.GetComponent<SceneState>().levels[2]==true)
+        pickUpRed();
+        if(manager.GetComponent<SceneState>().levels[3]==true)
+        pickUpGreen();
     }
 
     public void pickUpPurple()
@@ -38,6 +42,22 @@ public class inventory : MonoBehaviour
         yellowText=gameObject.transform.Find("YellowMushroom").Find("Amount").GetComponent<Text>();
         yellowText.text = yellowMush.ToString();
          if(yellowMush>=purpleGoal)yellowText.text="<color=#1E6C1D>"+yellowText.text+"</color>";
+
+    }
+    public void pickUpRed()
+    {
+        Text redText;
+
+        redText=gameObject.transform.Find("RedCrystal").Find("Amount").GetComponent<Text>();
+        redText.text="<color=#1E6C1D>"+1+"</color>";
+
+    }
+    public void pickUpGreen()
+    {
+        Text greenText;
+
+        greenText=gameObject.transform.Find("GreenCrystal").Find("Amount").GetComponent<Text>();
+        greenText.text="<color=#1E6C1D>"+1+"</color>";
 
     }
     

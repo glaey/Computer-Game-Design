@@ -50,5 +50,6 @@ public class ChangeScene : MonoBehaviour
         yield return null;
         GameObject.Find("Manager").GetComponent<SceneState>().sceneState.SetActive(true);
         SceneManager.UnloadSceneAsync(tmpname);
+    
     }
 }
