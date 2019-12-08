@@ -14,6 +14,28 @@ public class ChangeScene : MonoBehaviour
         
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F))
+        {
+            if (tutorial)
+            {
+                SceneManager.LoadScene(SceneName);
+            }
+            else
+            {
+                if (toLevel)
+                {
+                    StartCoroutine(LoadLevel());
+                }
+                else
+                {
+                    StartCoroutine(LoadMainLevel());
+                }
+            }
+        }
+    }
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
