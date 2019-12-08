@@ -19,6 +19,14 @@ public class InteractGoal : MonoBehaviour
         
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
+        {
+            StartCoroutine(CompleteLevel());
+        }
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
