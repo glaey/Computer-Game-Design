@@ -44,6 +44,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 2
+  minDis: 1.5
 --- !u!1001 &682500167240044488
 PrefabInstance:
   m_ObjectHideFlags: 0

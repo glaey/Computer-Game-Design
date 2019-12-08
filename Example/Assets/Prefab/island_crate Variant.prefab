@@ -43,6 +43,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeSum: 0
   buffer: 0.7
+  isCube: 1
 --- !u!1001 &6937746399852292669
 PrefabInstance:
   m_ObjectHideFlags: 0

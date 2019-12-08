@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeSum: 0
   buffer: 0.3
+  isCube: 1
 --- !u!1001 &2662714025668926540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,11 +76,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TempleBlockPush
       objectReference: {fileID: 0}
-    - target: {fileID: 23000012632150294, guid: 3ce3463b3d8adc542bc156f5ff199576,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e9b7896a9cf97824788309ec458947ce, type: 2}
     - target: {fileID: 4000012523591440, guid: 3ce3463b3d8adc542bc156f5ff199576, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.38
@@ -136,6 +132,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23000012632150294, guid: 3ce3463b3d8adc542bc156f5ff199576,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e9b7896a9cf97824788309ec458947ce, type: 2}
     m_RemovedComponents:
     - {fileID: 33000012711616048, guid: 3ce3463b3d8adc542bc156f5ff199576, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce3463b3d8adc542bc156f5ff199576, type: 3}

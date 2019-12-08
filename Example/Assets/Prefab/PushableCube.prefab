@@ -76,6 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeSum: 0
   buffer: 0.3
+  isCube: 1
 --- !u!54 &1090673430
 Rigidbody:
   m_ObjectHideFlags: 0

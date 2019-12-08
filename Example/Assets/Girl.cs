@@ -8,6 +8,8 @@ public class Girl : MonoBehaviour
     public GameObject[] penguins;
     private bool firstCall = true;
     private AudioSource[] audioSource;
+    public float startUpTime;
+    private float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,23 +22,26 @@ public class Girl : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton1))
         {
+            timer += Time.deltaTime;
             particleSystem.Play(false);
             particleSystem.loop = true;
-            Call();
             audioSource[0].Play();
             audioSource[0].loop = true;
         }
         else if (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.JoystickButton1))
         {
-            
-            Call();
+            timer += Time.deltaTime;
+            if(timer >= startUpTime)
+            {
+                Call();
+            }
         }
         else if (Input.GetKeyUp(KeyCode.R) || Input.GetKeyUp(KeyCode.JoystickButton1))
         {
             particleSystem.loop = false;
             audioSource[0].Stop();
             audioSource[1].loop = false;
-           
+            timer = 0;
         }
     }
 

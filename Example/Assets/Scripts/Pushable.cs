@@ -8,7 +8,7 @@ public class Pushable : MonoBehaviour
     private bool recentlyMoved;
     public float timeSum;
     public float buffer = 0.7f;
-    
+    public bool isCube = false;
     
     // Start is called before the first frame update
     void Start()
@@ -44,11 +44,18 @@ public class Pushable : MonoBehaviour
 
     void OnCollisionExit()
     {
-        rigidbody.velocity = new Vector3(0f, -10f, 0f);
+        if (isCube)
+        {
+            rigidbody.velocity = new Vector3(0f, -10f, 0f);
+        }
+        
     }
 
     void OnCollisionEnter()
     {
-        rigidbody.velocity = new Vector3(0f, 0f, 0f);
+        if (isCube)
+        {
+            rigidbody.velocity = new Vector3(0f, 0f, 0f);
+        }
     }
 }

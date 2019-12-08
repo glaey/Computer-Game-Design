@@ -2039,6 +2039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PenguinCritter
       objectReference: {fileID: 0}
+    - target: {fileID: 683993269710608034, guid: 3f900f2c994bce34986fc1e692fb6184,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 682043196731298006, guid: 3f900f2c994bce34986fc1e692fb6184,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2109,18 +2114,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 68696098, guid: 3f900f2c994bce34986fc1e692fb6184, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 588899360975348770, guid: 3f900f2c994bce34986fc1e692fb6184,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68696099, guid: 3f900f2c994bce34986fc1e692fb6184, type: 3}
+      propertyPath: m_Constraints
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 68696100, guid: 3f900f2c994bce34986fc1e692fb6184, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68696098, guid: 3f900f2c994bce34986fc1e692fb6184, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f900f2c994bce34986fc1e692fb6184, type: 3}
