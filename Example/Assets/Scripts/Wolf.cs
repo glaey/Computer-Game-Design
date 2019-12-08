@@ -11,12 +11,14 @@ public class Wolf : MonoBehaviour
     bool activeCD = false;
     Animator animator;
     move2 movement;
+    private AudioSource[] audioSource;
     // Start is called before the first frame update
     void Start()
     {
         movement = GetComponent<move2>();
         particleSystem = gameObject.GetComponent<ParticleSystem>();
         animator = GetComponent<Animator>();
+        audioSource = transform.parent.gameObject.GetComponents<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class Wolf : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
+                audioSource[3].Play();
                 Howl();
                 activeCD = true;
                 animator.SetBool("isHowling", true);
