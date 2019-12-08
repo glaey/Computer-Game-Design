@@ -103,10 +103,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82866700512605742, guid: 6817fd3c5809228498530e5ebe58f46a,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82866700512605742, guid: 6817fd3c5809228498530e5ebe58f46a,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82866700512605742, guid: 6817fd3c5809228498530e5ebe58f46a,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 82866700512605742, guid: 6817fd3c5809228498530e5ebe58f46a,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82866700512605742, guid: 6817fd3c5809228498530e5ebe58f46a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e213f073542414fcbbb5795da66a953a, type: 3}
+    - target: {fileID: 82866700512605742, guid: 6817fd3c5809228498530e5ebe58f46a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 195481092348747792, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
     - {fileID: 114269604839610384, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
     - {fileID: 143124695169995642, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
+    - {fileID: 114796337677062846, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6817fd3c5809228498530e5ebe58f46a, type: 3}
 --- !u!1 &683993269710608034 stripped
 GameObject:

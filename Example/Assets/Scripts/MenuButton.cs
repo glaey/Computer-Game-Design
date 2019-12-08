@@ -23,7 +23,7 @@ public class MenuButton : MonoBehaviour
             if(Input.GetAxis("Submit")==1){
                 animator.SetBool("pressed",true);
                 if(thisIndex==0)
-                {SceneManager.LoadScene("Presentation2");}
+                {SceneManager.LoadScene("TutorialEmil");}
                 else if(thisIndex==1)
                 {
                 #if UNITY_EDITOR

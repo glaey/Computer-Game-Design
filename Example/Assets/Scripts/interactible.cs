@@ -24,7 +24,7 @@ public class interactible : MonoBehaviour
         if (spriteObj.activeSelf)
         {
 
-            if (Input.GetKeyDown("j"))
+            if (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F))
             {
                 GameObject.Find("dialogManager").GetComponent<dlgMgr>().DisplayNextSentence(gameObject);
             }

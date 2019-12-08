@@ -19,10 +19,13 @@ public class inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(manager.GetComponent<SceneState>().levels[2]==true)
+        if (manager.GetComponent<SceneState>().levels[1] == true)
+        pickUpPenguin();
+        if (manager.GetComponent<SceneState>().levels[2]==true)
         pickUpRed();
         if(manager.GetComponent<SceneState>().levels[3]==true)
         pickUpGreen();
+        
     }
 
     public void pickUpPurple()
@@ -60,5 +63,14 @@ public class inventory : MonoBehaviour
         greenText.text="<color=#1E6C1D>"+1+"</color>";
 
     }
-    
+
+    public void pickUpPenguin()
+    {
+        Text greenText;
+
+        greenText = gameObject.transform.Find("Penguin").Find("Amount").GetComponent<Text>();
+        greenText.text = "<color=#1E6C1D>" + 1 + "</color>";
+
+    }
+
 }

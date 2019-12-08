@@ -23,20 +23,23 @@ public class ChangeScene : MonoBehaviour
             if (tutorial)
             {
                 SceneManager.LoadScene(SceneName);
-            }
-            else if (toLevel)
+            } else
             {
-                StartCoroutine(LoadLevel());
-            }
-            else
-            {
-                StartCoroutine(LoadMainLevel());
+                if (toLevel)
+                {
+                    StartCoroutine(LoadLevel());
+                }
+                else
+                {
+                    StartCoroutine(LoadMainLevel());
+                }
             }
         }
     }
 
     IEnumerator LoadLevel ()
     {
+        print("loading level");
         SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
         yield return null;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(SceneName));
