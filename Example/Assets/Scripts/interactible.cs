@@ -46,7 +46,7 @@ public class interactible : MonoBehaviour
 
         if (gameObject.name == "STAG"
           && GameObject.Find("Sheep").GetComponent<interactible>().statue == 1 
-          && GameObject.Find("Player").GetComponent<transform3>().form == 1
+          && GameObject.Find("Player (1)").GetComponent<transform3>().form == 1
         ){
             spriteObj.SetActive(true);
             GameObject.Find("dialogManager").GetComponent<dlgMgr>().StartDialogue(gameObject, statue);
