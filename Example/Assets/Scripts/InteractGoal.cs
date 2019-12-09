@@ -7,6 +7,7 @@ public class InteractGoal : MonoBehaviour
 {
     public int level;
     public string mainLevel;
+    private bool activated;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,14 +17,17 @@ public class InteractGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (activated)
+        {
+            StartCoroutine(CompleteLevel());
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
         {
-            StartCoroutine(CompleteLevel());
+            activated = true;
         }
     }
 
@@ -31,7 +35,7 @@ public class InteractGoal : MonoBehaviour
     {
         if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
         {
-            StartCoroutine(CompleteLevel());
+            activated = true;
         }
     }
 

@@ -7,6 +7,7 @@ public class pick : MonoBehaviour
   // Start is called before the first frame update
   public GameObject inventory;
     public string type;
+    private bool activated;
   void Start()
   {
     inventory = GameObject.Find("Inventory");
@@ -15,7 +16,19 @@ public class pick : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-
+        if (activated)
+        {
+            if (type == "Purple Mushroom")
+            {
+                inventory.GetComponent<inventory>().pickUpPurple();
+            }
+            else if (type == "Yellow Mushroom")
+            {
+                inventory.GetComponent<inventory>().pickUpYellow();
+            }
+            Destroy(gameObject);
+            Debug.Log("in");
+        }
   }
 
     /*
@@ -36,16 +49,7 @@ public class pick : MonoBehaviour
     {
         if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
         {
-            if (type == "Purple Mushroom")
-            {
-                inventory.GetComponent<inventory>().pickUpPurple();
-            }
-            else if (type == "Yellow Mushroom")
-            {
-                inventory.GetComponent<inventory>().pickUpYellow();
-            }
-            Destroy(gameObject);
-            Debug.Log("in");
+            activated = true;
         }
     }
 
@@ -53,16 +57,7 @@ public class pick : MonoBehaviour
     {
         if (other.transform.parent.tag == "Player" && (Input.GetKeyDown(KeyCode.Joystick1Button2) || Input.GetKeyDown(KeyCode.F)))
         {
-            if (type == "Purple Mushroom")
-            {
-                inventory.GetComponent<inventory>().pickUpPurple();
-            }
-            else if(type=="Yellow Mushroom")
-            {
-              inventory.GetComponent<inventory>().pickUpYellow();
-            }
-            Destroy(gameObject);
-             Debug.Log("in");
+            activated = true;
         }
     }
 
